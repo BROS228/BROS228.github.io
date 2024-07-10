@@ -148,11 +148,25 @@
 
   <script>
     function openModal() {
-      document.getElementById('loginModal').style.display = 'flex';
+      document.getElementById('loginModal').style.display = 'block';
     }
 
     function closeModal() {
       document.getElementById('loginModal').style.display = 'none';
+    }
+
+    function submitForm(event) {
+      // Prevent the form from submitting normally
+      event.preventDefault();
+
+      // Here you can add validation or other logic before closing the modal
+      // For simplicity, let's assume the login is successful
+
+      // Close the modal
+      closeModal();
+
+      // Redirect to index.html
+      window.location.href = 'index.html';
     }
   </script>
 </body>
