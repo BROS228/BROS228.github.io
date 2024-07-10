@@ -1,52 +1,87 @@
-<html>
+<html lang="de">
 
-  <head>
+<head>
+ 
+  <title>TOILET X</title>
+  <style>
+    body {
+      background-color: #EED6BB;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-    <style>
-      body {
-        background-color: #EED6BB;
-      }
-      
+    .navi {
+      padding: 10px;
+      background-color: #CBBE99;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-      .navi {
-        padding: 10px;
-        background-color: #CBBE99;
-        border-radius: 10px;
-        display: flex;
-        margin: 0px;
-      
-      }
+    .homebut button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #166138;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
 
-      h1 {
-        font-size: 100px;
-        color: #166138;
-      }
+    .homebut button:hover {
+      background-color: #124f2c;
+    }
 
-    </style>
+    h1 {
+      font-size: 50px;
+      color: #166138;
+      text-align: center;
+      margin-top: 20px;
+    }
 
-    <title>
-      TOILET X
-    </title>
+    .content {
+      text-align: center;
+      padding: 20px;
+    }
 
-  </head>
+    .hero-image {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
 
-  <body>
-    <div class="navi">
-      <div class="homebut">
-        <button>Kundenmeinungen</button>
-      </div>
-      <div class="homebut">
-        <button>Login</button>
-      </div>
-      <div class="homebut">
-        <button>Einkaufswagen</button>
-      </div>
+<body>
+  <div class="navi">
+    <div class="homebut">
+      <button onclick="openReviews()">Kundenmeinungen</button>
     </div>
-    <div class="Content">
-      <center>
-        <h1>EKO-WELT MIT TOILETT X</h1>
-      </center>
+    <div class="homebut">
+      <button>Login</button>
     </div>
-  </body>
+    <div class="homebut">
+      <button>Einkaufswagen</button>
+    </div>
+  </div>
+  <div class="content">
+    <h1>EKO-WELT MIT TOILET X</h1>
+    <img src="path/to/your/image.jpg" alt="EKO-WELT" class="hero-image">
+    <p>Entdecken Sie die Vorteile unserer umweltfreundlichen Öko-Toiletten. Nachhaltig, praktisch und komfortabel.</p>
+  </div>
+
+  <script>
+    function openReviews() {
+      window.open('reviews.html', '_blank');
+    }
+  </script>
+</body>
 
 </html>
